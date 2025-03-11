@@ -36,6 +36,10 @@ public class Postagem {
 	@JsonIgnoreProperties("postagem") //
 	private Tema tema;// adicionando o objeto tema (id, descrição)
 	
+	@ManyToOne
+	@JsonIgnoreProperties("postagem") //
+	private Usuario usuario;
+	
 	public Tema getTema() {
 		return tema;
 	}
