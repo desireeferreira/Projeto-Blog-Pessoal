@@ -26,7 +26,7 @@ package com.generation.blogpessoal.security;
 			byte[] keyBytes = Decoders.BASE64.decode(SECRET);
 			return Keys.hmacShaKeyFor(keyBytes);
 		}
-
+// extrair os claims ->informações token
 		private Claims extractAllClaims(String token) {
 			return Jwts.parserBuilder()
 					.setSigningKey(getSignKey()).build()
