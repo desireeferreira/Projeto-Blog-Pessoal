@@ -25,7 +25,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/temas") //localhost:8080/temas
-@CrossOrigin(origins = "x", allowedHeaders = "x" )// permitir acesso de qualquer maquina
+@CrossOrigin(origins = "*", allowedHeaders = "*")// permitir acesso de qualquer maquina
 public class TemaController {
 
 	@Autowired
