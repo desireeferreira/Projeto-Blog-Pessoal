@@ -72,6 +72,14 @@ public class Postagem {
 		this.texto = texto;
 	}
 
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
 	public LocalDateTime getData() {
 		return data;
 	}
